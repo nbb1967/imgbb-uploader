@@ -2,9 +2,9 @@
 #AutoIt3Wrapper_Icon=icons\ibb.ico
 #AutoIt3Wrapper_Res_Comment=Created by AutoIt v3.3.16.1
 #AutoIt3Wrapper_Res_Description=ImgBB Uploader
-#AutoIt3Wrapper_Res_Fileversion=0.9.9.3
+#AutoIt3Wrapper_Res_Fileversion=1.0.0.0
 #AutoIt3Wrapper_Res_ProductName=ImgBB Uploader
-#AutoIt3Wrapper_Res_ProductVersion=0.9.9.3
+#AutoIt3Wrapper_Res_ProductVersion=1.0.0.0
 #AutoIt3Wrapper_Res_CompanyName=NyBumBum
 #AutoIt3Wrapper_Res_LegalCopyright=Copyright NyBumBum © 2023. All right reserved.
 #AutoIt3Wrapper_Res_Language=1033
@@ -113,7 +113,7 @@ Local $iCurlErrorDetect
 Local $asCurlError
 Local $sCurlError
 
-#Region ### START Koda GUI section ### FormProgress.kxf
+#Region ### START Koda GUI section ### FormProgress
 $idFormProgress = GUICreate(GetStringFromResources($asArrayFormProgress[$eUploadCompletedStart]), 442, 91, -1, -1, BitOR($WS_CAPTION, $WS_SYSMENU))
 GUISetIcon(@ScriptFullPath, 99)
 GUISetFont(9, 400, 0, "Segoe UI")
@@ -365,13 +365,14 @@ Func ChoiseContentForClipboard()
 	Return $sContentForClipboard
 EndFunc   ;==>ChoiseContentForClipboard
 
+
 #Region ;****Get Registry****
 Func GetBrowserOptionsFromRegistry()
 	$sArchitecture = @OSArch
 	If $sArchitecture = "X64" Then
-		$nBrowserOptions = RegRead("HKCU64\Software\NyBumBum\ImgBB Uploader\1", "OptionsBrowser")
+		$nBrowserOptions = RegRead("HKCU64\Software\NyBumBum\ImgBB Uploader", "OptionsBrowser")
 	ElseIf $sArchitecture = "X86" Then
-		$nBrowserOptions = RegRead("HKCU\Software\NyBumBum\ImgBB Uploader\1", "OptionsBrowser")
+		$nBrowserOptions = RegRead("HKCU\Software\NyBumBum\ImgBB Uploader", "OptionsBrowser")
 	Else
 		MsgBox($MB_ICONINFORMATION, "IA64", "Itanium is not supported")
 		Exit
@@ -382,9 +383,9 @@ EndFunc   ;==>GetBrowserOptionsFromRegistry
 Func GetClipboardOptionsFromRegistry()
 	$sArchitecture = @OSArch
 	If $sArchitecture = "X64" Then
-		$nClipboardOptions = RegRead("HKCU64\Software\NyBumBum\ImgBB Uploader\1", "OptionsClipboard")
+		$nClipboardOptions = RegRead("HKCU64\Software\NyBumBum\ImgBB Uploader", "OptionsClipboard")
 	ElseIf $sArchitecture = "X86" Then
-		$nClipboardOptions = RegRead("HKCU\Software\NyBumBum\ImgBB Uploader\1", "OptionsClipboard")
+		$nClipboardOptions = RegRead("HKCU\Software\NyBumBum\ImgBB Uploader", "OptionsClipboard")
 	Else
 		MsgBox($MB_ICONINFORMATION, "IA64", "Itanium is not supported")
 		Exit
@@ -395,17 +396,17 @@ EndFunc   ;==>GetClipboardOptionsFromRegistry
 Func GetDataFromRegistry()
 	$sArchitecture = @OSArch
 	If $sArchitecture = "X64" Then
-		$sAPIkey = RegRead("HKCU64\Software\NyBumBum\ImgBB Uploader\1", "APIkey")
-		$nExpiration = RegRead("HKCU64\Software\NyBumBum\ImgBB Uploader\1", "Expiration")
-		$nBrowser = RegRead("HKCU64\Software\NyBumBum\ImgBB Uploader\1", "ActionBrowser")
-		$nClipboard = RegRead("HKCU64\Software\NyBumBum\ImgBB Uploader\1", "ActionClipboard")
-		$nNotification = RegRead("HKCU64\Software\NyBumBum\ImgBB Uploader\1", "ActionNotification")
+		$sAPIkey = RegRead("HKCU64\Software\NyBumBum\ImgBB Uploader", "APIkey")
+		$nExpiration = RegRead("HKCU64\Software\NyBumBum\ImgBB Uploader", "Expiration")
+		$nBrowser = RegRead("HKCU64\Software\NyBumBum\ImgBB Uploader", "ActionBrowser")
+		$nClipboard = RegRead("HKCU64\Software\NyBumBum\ImgBB Uploader", "ActionClipboard")
+		$nNotification = RegRead("HKCU64\Software\NyBumBum\ImgBB Uploader", "ActionNotification")
 	ElseIf $sArchitecture = "X86" Then
-		$sAPIkey = RegRead("HKCU\Software\NyBumBum\ImgBB Uploader\1", "APIkey")
-		$nExpiration = RegRead("HKCU\Software\NyBumBum\ImgBB Uploader\1", "Expiration")
-		$nBrowser = RegRead("HKCU\Software\NyBumBum\ImgBB Uploader\1", "ActionBrowser")
-		$nClipboard = RegRead("HKCU\Software\NyBumBum\ImgBB Uploader\1", "ActionClipboard")
-		$nNotification = RegRead("HKCU\Software\NyBumBum\ImgBB Uploader\1", "ActionNotification")
+		$sAPIkey = RegRead("HKCU\Software\NyBumBum\ImgBB Uploader", "APIkey")
+		$nExpiration = RegRead("HKCU\Software\NyBumBum\ImgBB Uploader", "Expiration")
+		$nBrowser = RegRead("HKCU\Software\NyBumBum\ImgBB Uploader", "ActionBrowser")
+		$nClipboard = RegRead("HKCU\Software\NyBumBum\ImgBB Uploader", "ActionClipboard")
+		$nNotification = RegRead("HKCU\Software\NyBumBum\ImgBB Uploader", "ActionNotification")
 	Else
 		MsgBox($MB_ICONINFORMATION, "IA64", "Itanium is not supported")
 		Exit
@@ -450,8 +451,10 @@ Func ImgBBUploaderGUI()
 	$idFormSettings = GUICreate(GetStringFromResources($anArrayStringsSettingsDlg[$eFormSettings]), 389, 513, -1, -1)
 	GUISetIcon(@ScriptFullPath, 99)
 	GUISetFont(9, 400, 0, "Segoe UI")
+
 	$idLabel_GroupAPIkey = GUICtrlCreateLabel(GetStringFromResources($anArrayStringsSettingsDlg[$eGroup_APIkey]), 27, 18, 324, 21)
 	GUICtrlSetFont(-1, 11, 400, 0, "Segoe UI")
+
 	$idLabel_APIkey1 = GUICtrlCreateLabel(GetStringFromResources($anArrayStringsSettingsDlg[$eLabel_APIkey1]), 36, 45, 316, 45)
 	$idInput_APIkey = GUICtrlCreateInput("", 36, 140, 316, 23, BitOR($GUI_SS_DEFAULT_INPUT, $ES_RIGHT))                           ; outdated context menu...
 	GUICtrlSetLimit(-1, 32)
@@ -459,23 +462,30 @@ Func ImgBBUploaderGUI()
 	If Not $iAPIkeyLength = 0 Then
 		GUICtrlSetData(-1, $sAPIkey)
 	EndIf
+
 	$idButton_GetAPIkey = GUICtrlCreateButton(GetStringFromResources($anArrayStringsSettingsDlg[$eButton_GetAPIkey]), 190, 99, 162, 25)
 	$idLabel_APIkey2 = GUICtrlCreateLabel(GetStringFromResources($anArrayStringsSettingsDlg[$eLabel_APIkey2]), 36, 121, 59, 19)
 	$idLabel_Hr1 = GUICtrlCreateLabel("", 36, 180, 317, 2, $SS_SUNKEN)
+
 	$idLabel_GroupExpiration = GUICtrlCreateLabel(GetStringFromResources($anArrayStringsSettingsDlg[$eGroup_Expiration]), 27, 194, 333, 21)
 	GUICtrlSetFont(-1, 11, 400, 0, "Segoe UI")
+
 	$idCombo_Expiration = GUICtrlCreateCombo("", 190, 225, 162, 25, $CBS_DROPDOWNLIST)
 	If $nExpiration > UBound($aiArrayExpiration) - 1 Then
 		$nExpiration = 0        ;default
 	EndIf
 	GUICtrlSetData(-1, ComboboxExpirationFullList(), GetStringFromResources($aiArrayExpiration[$nExpiration][0]))
+
 	$idLabel_Hr2 = GUICtrlCreateLabel("", 36, 270, 317, 2, $SS_SUNKEN)
+
 	$idLabel_GroupPostAction = GUICtrlCreateLabel(GetStringFromResources($anArrayStringsSettingsDlg[$eGroup_PostAction]), 27, 284, 331, 21)
 	GUICtrlSetFont(-1, 11, 400, 0, "Segoe UI")
+
 	$idCheckbox_Browser = GUICtrlCreateCheckbox(GetStringFromResources($anArrayStringsSettingsDlg[$eCheckbox_Browser]), 36, 319, 91, 19)
-	If $nBrowser <> 4 Or $nBrowser = "" Then
+	If $nBrowser <> 4 Then
 		GUICtrlSetState(-1, $GUI_CHECKED)    ;default
 	EndIf
+
 	$idCombo_Browser = GUICtrlCreateCombo("", 190, 315, 162, 25, $CBS_DROPDOWNLIST)
 	GetBrowserOptionsFromRegistry()
 	If $nBrowserOptions > UBound($asArrayBrowserOptions) - 1 Then
@@ -485,10 +495,12 @@ Func ImgBBUploaderGUI()
 	If $nBrowser = 4 Then
 		GUICtrlSetState(-1, $GUI_DISABLE)
 	EndIf
+
 	$idCheckbox_Clipboard = GUICtrlCreateCheckbox(GetStringFromResources($anArrayStringsSettingsDlg[$eCheckbox_Clipboard]), 36, 353, 307, 19)
-	If $nClipboard <> 4 Or $nClipboard = "" Then
+	If $nClipboard <> 4 Then
 		GUICtrlSetState(-1, $GUI_CHECKED)    ;default
 	EndIf
+
 	$idCombo_Clipboard = GUICtrlCreateCombo("", 36, 378, 316, 25, $CBS_DROPDOWNLIST)
 	GetClipboardOptionsFromRegistry()
 	If $nClipboardOptions > UBound($asArrayClipboardOptions) - 1 Then
@@ -498,12 +510,16 @@ Func ImgBBUploaderGUI()
 	If $nClipboard = 4 Then
 		GUICtrlSetState(-1, $GUI_DISABLE)
 	EndIf
+
 	$idCheckbox_Notification = GUICtrlCreateCheckbox(GetStringFromResources($anArrayStringsSettingsDlg[$eCheckbox_Notification]), 36, 414, 307, 19)
 	If $nNotification = 1 Then
 		GUICtrlSetState(-1, $GUI_CHECKED)
 	EndIf
+
 	$idLabel_Hr3 = GUICtrlCreateLabel("", 0, 450, 390, 2, $SS_SUNKEN)
+
 	$idButton_Cancel = GUICtrlCreateButton(GetStringFromResources($anArrayStringsSettingsDlg[$eButton_Cancel]), 252, 468, 100, 28)
+
 	$idButton_Save = GUICtrlCreateButton(GetStringFromResources($anArrayStringsSettingsDlg[$eButton_Save]), 144, 468, 100, 28)
 	GUICtrlSetState(-1, $GUI_DEFBUTTON)
 	If $iAPIkeyLength = 0 Then
@@ -511,7 +527,9 @@ Func ImgBBUploaderGUI()
 	Else
 		GUICtrlSetState($idButton_Save, $GUI_FOCUS) ;to deselect a APIkey
 	EndIf
+
 	$idButton_About = GUICtrlCreateButton(GetStringFromResources($anArrayStringsSettingsDlg[$eButton_About]), 36, 468, 100, 28)
+
 	GUISetState(@SW_SHOW)
 	#EndRegion ### END Koda GUI section ###
 
@@ -519,8 +537,10 @@ Func ImgBBUploaderGUI()
 	$idFormAbout = GUICreate(GetStringFromResources($anArrayStringsAboutDlg[$eFormAbout]), 478, 173, -1, -1, BitOR($WS_CAPTION, $WS_SYSMENU), -1, $idFormSettings)
 	GUISetIcon(@ScriptFullPath, 99)
 	GUISetFont(9, 400, 0, "Segoe UI")
+
 	$idIcon_iBBLogo = GUICtrlCreateIcon(@ScriptFullPath, 99, 36, 36, 64, 64)
 	GUICtrlSetCursor(-1, 0)
+
 	$idLabel_Name = GUICtrlCreateLabel(GetStringFromResources($anArrayStringsAboutDlg[$eLabel_Name]), 108, 33, 118, 16, $SS_RIGHT)
 	$idLabel_Version = GUICtrlCreateLabel(GetStringFromResources($anArrayStringsAboutDlg[$eLabel_Version]), 108, 51, 118, 16, $SS_RIGHT)
 	$idLabel_Copiright = GUICtrlCreateLabel(GetStringFromResources($anArrayStringsAboutDlg[$eLabel_Copiright]), 108, 69, 118, 16, $SS_RIGHT)
@@ -530,12 +550,15 @@ Func ImgBBUploaderGUI()
 	$idLabel_NameText = GUICtrlCreateLabel(GetStringFromResources($anArrayStringsAboutDlg[$eLabel_NameText]), 234, 33, 209, 16)
 	$idLabel_VersionText = GUICtrlCreateLabel(GetStringFromResources($anArrayStringsAboutDlg[$eLabel_VersionText]), 234, 51, 209, 16)
 	$idLabel_CopirightText = GUICtrlCreateLabel(GetStringFromResources($anArrayStringsAboutDlg[$eLabel_CopirightText]), 234, 69, 209, 16)
+
 	$idLabel_SiteText = GUICtrlCreateLabel(GetStringFromResources($anArrayStringsAboutDlg[$eLabel_SiteText]), 234, 87, 208, 19)
 	GUICtrlSetColor(-1, 0x0B6992)
 	GUICtrlSetCursor(-1, 0)
+
 	$idLabel_SupportText = GUICtrlCreateLabel(GetStringFromResources($anArrayStringsAboutDlg[$eLabel_SupportText]), 234, 105, 207, 19)
 	GUICtrlSetColor(-1, 0x0B6992)
 	GUICtrlSetCursor(-1, 0)
+
 	$idLabel_CommentText = GUICtrlCreateLabel(GetStringFromResources($anArrayStringsAboutDlg[$eLabel_CommentText]), 234, 123, 209, 16)
 	#EndRegion ### END Koda GUI section ###
 
@@ -555,6 +578,7 @@ Func ImgBBUploaderGUI()
 				GUICtrlSetState($idCombo_Clipboard, $GUI_ENABLE)
 			Case $nClipboard = 4 And $nClipboard <> $iMemoryCheckbox_Clipboard
 				GUICtrlSetState($idCombo_Clipboard, $GUI_DISABLE)
+
 			Case $aMsg[0] = $idButton_Cancel
 				Exit
 			Case $aMsg[0] = $GUI_EVENT_CLOSE And $aMsg[1] = $idFormSettings
@@ -569,12 +593,14 @@ Func ImgBBUploaderGUI()
 				GUISetState(@SW_ENABLE, $idFormSettings)
 				WinActivate($idFormSettings)
 				GUICtrlSetState($idButton_Save, $GUI_FOCUS)
+
 			Case $aMsg[0] = $idLabel_SupportText
 				ShellExecute("mailto:nybumbum@gmail.com?subject=ImgBB%20Uploader")
 			Case $aMsg[0] = $idLabel_SiteText
 				ShellExecute("https://github.com/nbb1967/imgbb-uploader")
 			Case $aMsg[0] = $idIcon_iBBLogo
 				ShellExecute("https://imgbb.com/")
+
 			Case $aMsg[0] = $idButton_Save
 				$sAPIkey = GUICtrlRead($idInput_APIkey)
 				$iAPIkeyLength = StringLen($sAPIkey)
@@ -587,41 +613,46 @@ Func ImgBBUploaderGUI()
 						MsgBox($MB_ICONERROR, GetStringFromResources($anArrayMsg[$eAPIkeyCorrectnessError]), GetStringFromResources($anArrayMsg[$eAPIkeyCorrectnessErrorText]))
 						ContinueLoop
 				EndSelect
+
 				$nExpiration = GUICtrlSendMsg($idCombo_Expiration, $CB_GETCURSEL, 0, 0)
+
 				$nBrowser = GUICtrlRead($idCheckbox_Browser)
 				If $nBrowser = 1 Then
 					$nBrowserOptions = GUICtrlSendMsg($idCombo_Browser, $CB_GETCURSEL, 0, 0)
 					Switch $sArchitecture
 						Case "X64"
-							RegWrite("HKCU64\Software\NyBumBum\ImgBB Uploader\1", "OptionsBrowser", "REG_DWORD", $nBrowserOptions)
+							RegWrite("HKCU64\Software\NyBumBum\ImgBB Uploader", "OptionsBrowser", "REG_DWORD", $nBrowserOptions)
 						Case "X86"
-							RegWrite("HKCU\Software\NyBumBum\ImgBB Uploader\1", "OptionsBrowser", "REG_DWORD", $nBrowserOptions)
+							RegWrite("HKCU\Software\NyBumBum\ImgBB Uploader", "OptionsBrowser", "REG_DWORD", $nBrowserOptions)
 					EndSwitch
 				EndIf
+
 				$nClipboard = GUICtrlRead($idCheckbox_Clipboard)
 				If $nClipboard = 1 Then
 					$nClipboardOptions = GUICtrlSendMsg($idCombo_Clipboard, $CB_GETCURSEL, 0, 0)
 					Switch $sArchitecture
 						Case "X64"
-							RegWrite("HKCU64\Software\NyBumBum\ImgBB Uploader\1", "OptionsClipboard", "REG_DWORD", $nClipboardOptions)
+							RegWrite("HKCU64\Software\NyBumBum\ImgBB Uploader", "OptionsClipboard", "REG_DWORD", $nClipboardOptions)
 						Case "X86"
-							RegWrite("HKCU\Software\NyBumBum\ImgBB Uploader\1", "OptionsClipboard", "REG_DWORD", $nClipboardOptions)
+							RegWrite("HKCU\Software\NyBumBum\ImgBB Uploader", "OptionsClipboard", "REG_DWORD", $nClipboardOptions)
 					EndSwitch
 				EndIf
+
 				$nNotification = GUICtrlRead($idCheckbox_Notification)
+
 				Switch $sArchitecture
 					Case "X64"
-						RegWrite("HKCU64\Software\NyBumBum\ImgBB Uploader\1", "APIkey", "REG_SZ", $sAPIkey)
-						RegWrite("HKCU64\Software\NyBumBum\ImgBB Uploader\1", "Expiration", "REG_DWORD", $nExpiration)
-						RegWrite("HKCU64\Software\NyBumBum\ImgBB Uploader\1", "ActionBrowser", "REG_DWORD", $nBrowser)
-						RegWrite("HKCU64\Software\NyBumBum\ImgBB Uploader\1", "ActionClipboard", "REG_DWORD", $nClipboard)
-						RegWrite("HKCU64\Software\NyBumBum\ImgBB Uploader\1", "ActionNotification", "REG_DWORD", $nNotification)
+						RegWrite("HKCU64\Software\NyBumBum\ImgBB Uploader", "APIkey", "REG_SZ", $sAPIkey)
+						RegWrite("HKCU64\Software\NyBumBum\ImgBB Uploader", "Expiration", "REG_DWORD", $nExpiration)
+						RegWrite("HKCU64\Software\NyBumBum\ImgBB Uploader", "ActionBrowser", "REG_DWORD", $nBrowser)
+						RegWrite("HKCU64\Software\NyBumBum\ImgBB Uploader", "ActionClipboard", "REG_DWORD", $nClipboard)
+						RegWrite("HKCU64\Software\NyBumBum\ImgBB Uploader", "ActionNotification", "REG_DWORD", $nNotification)
 					Case "X86"
-						RegWrite("HKCU\Software\NyBumBum\ImgBB Uploader\1", "APIkey", "REG_SZ", $sAPIkey)
-						RegWrite("HKCU\Software\NyBumBum\ImgBB Uploader\1", "Expiration", "REG_DWORD", $nExpiration)
-						RegWrite("HKCU\Software\NyBumBum\ImgBB Uploader\1", "ActionBrowser", "REG_DWORD", $nBrowser)
-						RegWrite("HKCU\Software\NyBumBum\ImgBB Uploader\1", "ActionClipboard", "REG_DWORD", $nClipboard)
-						RegWrite("HKCU\Software\NyBumBum\ImgBB Uploader\1", "ActionNotification", "REG_DWORD", $nNotification)
+						RegWrite("HKCU\Software\NyBumBum\ImgBB Uploader", "APIkey", "REG_SZ", $sAPIkey)
+						RegWrite("HKCU\Software\NyBumBum\ImgBB Uploader", "Expiration", "REG_DWORD", $nExpiration)
+						RegWrite("HKCU\Software\NyBumBum\ImgBB Uploader", "ActionBrowser", "REG_DWORD", $nBrowser)
+						RegWrite("HKCU\Software\NyBumBum\ImgBB Uploader", "ActionClipboard", "REG_DWORD", $nClipboard)
+						RegWrite("HKCU\Software\NyBumBum\ImgBB Uploader", "ActionNotification", "REG_DWORD", $nNotification)
 				EndSwitch
 				ExitLoop
 		EndSelect
