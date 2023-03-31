@@ -23,7 +23,7 @@
 Основано на [ImgBB API](https://api.imgbb.com/).    
 Использует [cURL](https://curl.se/).    
 Создано с [AutoIt](https://www.autoitscript.com/site/).    
-ОС: Windows 10, Windows 11    
+ОС: Windows 10/11    
 Язык: русский, английский    
 Автор: NyBumBum     
 <br>
