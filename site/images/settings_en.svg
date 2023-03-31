@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!--Generator: Xara Designer (www.xara.com), SVG filter version: 6.7.0.0-->
-<svg width="331.72pt" height="443.5pt" fill="none" fill-rule="evenodd" font-family="'Times New Roman'" font-size="16px" overflow="visible" stroke="#000000" stroke-linejoin="bevel" stroke-miterlimit="10" stroke-width=".501" style="font-variant-ligatures:none" version="1.1" viewBox="116.25 -741.75 331.71 443.5" xmlns="http://www.w3.org/2000/svg">
+<svg width="265.38pt" height="354.8pt" fill="none" fill-rule="evenodd" font-family="'Times New Roman'" font-size="16px" overflow="visible" stroke="#000000" stroke-linejoin="bevel" stroke-miterlimit="10" stroke-width=".501" style="font-variant-ligatures:none" version="1.1" viewBox="116.25 -741.75 265.37 354.8" xmlns="http://www.w3.org/2000/svg">
  <defs>
-   <style type="text/css">@font-face {
+  <style type="text/css">@font-face {
     font-family: "Segoe UI";
     font-style: normal;
     font-weight: 400;
     src: local("Segoe UI"), url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2");
 }</style>
-  <filter id="filter753" x="-.062826" y="-.051637" width="1.1342" height="1.0971" color-interpolation-filters="sRGB">
+  <filter id="filter753" x="-.062825" y="-.051638" width="1.1342" height="1.0971" color-interpolation-filters="sRGB">
    <feFlood flood-color="rgb(0,0,0)" flood-opacity=".41961" result="flood"/>
    <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
    <feGaussianBlur in="composite1" result="blur" stdDeviation="7.5"/>
@@ -17,28 +17,30 @@
    <feComposite in="SourceGraphic" in2="offset" result="composite2"/>
   </filter>
  </defs>
- <g transform="matrix(1 0 0 -1 18 18.001)">
+ <g transform="matrix(.8 0 0 -.8 37.649 -133.95)">
   <rect x="116.62" y="337.12" width="292.47" height="404.25" fill="#f0f0f0" filter="url(#filter753)" stroke="#757575" stroke-linejoin="miter" stroke-width=".749"/>
-  <g fill="#000000" font-family="Segoe UI" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375">
-   <g font-size="11px">
-    <text transform="matrix(1 0 0 -1 137.13 697.46)" kerning="auto" letter-spacing="-.02em" xml:space="preserve"><tspan x="0" y="0">API key</tspan></text>
-    <text transform="matrix(1 0 0 -1 136.9 565.5)" kerning="auto" letter-spacing="-.03em" xml:space="preserve"><tspan x="0" y="0">Deleting an image</tspan></text>
-    <text transform="matrix(1 0 0 -1 137.1 498)" kerning="auto" letter-spacing="-.03em" xml:space="preserve"><tspan x="0" y="0">Action after upload</tspan></text>
+  <g font-family="Segoe UI">
+   <g fill="#000" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375">
+    <g font-size="11px">
+     <text transform="matrix(1,0,0,-1,137.13,697.46)" kerning="auto" letter-spacing="-.02em" xml:space="preserve"><tspan x="0" y="0">API key</tspan></text>
+     <text transform="matrix(1,0,0,-1,136.9,565.5)" kerning="auto" letter-spacing="-.03em" xml:space="preserve"><tspan x="0" y="0">Deleting an image</tspan></text>
+     <text transform="matrix(1,0,0,-1,137.1,498)" kerning="auto" letter-spacing="-.03em" xml:space="preserve"><tspan x="0" y="0">Action after upload</tspan></text>
+    </g>
+    <text transform="matrix(1,0,0,-1,143.9,679.5)" font-size="9px" kerning="auto" xml:space="preserve"><tspan x="0" y="0">The application needs an API key to upload images. Get</tspan><tspan x="0" y="11.252">your API key from the ImgBB website. Paste it into the input</tspan><tspan x="0" y="22.504">box below:</tspan></text>
+    <text transform="matrix(1,0,0,-1,143.87,622.5)" font-size="9px" kerning="auto" xml:space="preserve"><tspan x="0" y="0">API key:</tspan></text>
    </g>
-   <text transform="matrix(1 0 0 -1 143.9 679.5)" font-size="9px" kerning="auto" xml:space="preserve"><tspan x="0" y="0">The application needs an API key to upload images. Get</tspan><tspan x="0" y="11.252">your API key from the ImgBB website. Paste it into the input</tspan><tspan x="0" y="22.504">box below:</tspan></text>
-   <text transform="matrix(1 0 0 -1 143.87 622.5)" font-size="9px" kerning="auto" xml:space="preserve"><tspan x="0" y="0">API key:</tspan></text>
-  </g>
-  <g id="Group" font-family="Segoe UI" font-size="9px">
-   <rect x="145.1" y="351.38" width="72.74" height="18.705" fill="#e1e1e1" stroke="#aeaeae" stroke-linejoin="miter" stroke-width=".75"/>
-   <text transform="matrix(1 0 0 -1 181.54 357.62)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="-12.256" y="0">About</tspan></text>
-  </g>
-  <g font-family="Segoe UI" font-size="9px">
-   <rect x="226.09" y="351.42" width="72.74" height="18.705" fill="#e1e1e1" stroke="#0078d7" stroke-linejoin="miter" stroke-width=".75"/>
-   <text transform="matrix(1 0 0 -1 262.38 357.62)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="-9.1890001" y="0">Save</tspan></text>
-   <rect x="307.1" y="351.42" width="72.74" height="18.705" fill="#e1e1e1" stroke="#aeaeae" stroke-linejoin="miter" stroke-width=".75"/>
-   <text transform="matrix(1 0 0 -1 343.63 357.62)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="-13.144" y="0">Cancel</tspan></text>
-   <rect x="260.6" y="630.38" width="119.24" height="16.509" fill="#e1e1e1" stroke="#aeaeae" stroke-linejoin="miter" stroke-width=".75"/>
-   <text transform="matrix(1 0 0 -1 320.03 635.25)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="-22.819" y="0">Get API key</tspan></text>
+   <g id="Group" font-size="9px">
+    <rect x="145.1" y="351.38" width="72.74" height="18.705" fill="#e1e1e1" stroke="#aeaeae" stroke-linejoin="miter" stroke-width=".75"/>
+    <text transform="matrix(1,0,0,-1,181.54,357.62)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="-12.256" y="0">About</tspan></text>
+   </g>
+   <g font-size="9px">
+    <rect x="226.09" y="351.42" width="72.74" height="18.705" fill="#e1e1e1" stroke="#0078d7" stroke-linejoin="miter" stroke-width=".75"/>
+    <text transform="matrix(1,0,0,-1,262.38,357.62)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="-9.1890001" y="0">Save</tspan></text>
+    <rect x="307.1" y="351.42" width="72.74" height="18.705" fill="#e1e1e1" stroke="#aeaeae" stroke-linejoin="miter" stroke-width=".75"/>
+    <text transform="matrix(1,0,0,-1,343.63,357.62)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="-13.144" y="0">Cancel</tspan></text>
+    <rect x="260.6" y="630.38" width="119.24" height="16.509" fill="#e1e1e1" stroke="#aeaeae" stroke-linejoin="miter" stroke-width=".75"/>
+    <text transform="matrix(1,0,0,-1,320.03,635.25)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="-22.819" y="0">Get API key</tspan></text>
+   </g>
   </g>
   <g fill="none" stroke-linejoin="miter" stroke-width=".75">
    <path d="m143.96 586.12h237" stroke="#fff"/>
@@ -50,46 +52,48 @@
   </g>
   <g font-family="Segoe UI" font-size="9px" letter-spacing="-.02em">
    <rect x="144.34" y="600.37" width="236.25" height="16.509" fill="#fff" stroke="#0078d7" stroke-linejoin="miter" stroke-width=".75"/>
-   <text transform="matrix(1 0 0 -1 376.89 606.11)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="-143.408" y="0">2444b69f2bcd52c6c6a9d1847f43e9f6</tspan></text>
+   <text transform="matrix(1,0,0,-1,376.89,606.11)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="-143.408" y="0">2444b69f2bcd52c6c6a9d1847f43e9f6</tspan></text>
   </g>
   <g stroke="none">
    <rect x="116.98" y="722.25" width="291.72" height="18.741" fill="#fff" stroke-linejoin="miter"/>
-   <rect transform="rotate(90 -303.39 428.61)" x="-6" y="-6" width="12.001" height="12.001" fill="#23a9e0" stroke-linejoin="miter" stroke-width=".043"/>
+   <rect transform="rotate(90,-303.39,428.61)" x="-6" y="-6" width="12.001" height="12.001" fill="#23a9e0" stroke-linejoin="miter" stroke-width=".043"/>
    <g fill="#fff" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-width=".063">
     <path d="m121.74 733.79c-0.197 0-0.364 0.069-0.502 0.206-0.137 0.137-0.205 0.304-0.205 0.501s0.068 0.365 0.205 0.506c0.138 0.14 0.305 0.21 0.502 0.21 0.196 0 0.365-0.07 0.505-0.21 0.14-0.141 0.211-0.309 0.211-0.506s-0.071-0.364-0.211-0.501-0.309-0.206-0.505-0.206zm-0.609-5.012c-0.286 0-0.518 0.09-0.694 0.269s-0.264 0.447-0.264 0.805c0 0.149 0.024 0.343 0.072 0.582l0.609 2.873h1.288l-0.644-3.043c-0.024-0.09-0.036-0.185-0.036-0.286 0-0.12 0.028-0.205 0.085-0.256 0.057-0.05 0.151-0.076 0.282-0.076 0.173 0 0.334 0.073 0.483 0.22 0.149 0.146 0.257 0.335 0.323 0.568h0.375c-0.22-0.644-0.504-1.081-0.85-1.311s-0.689-0.345-1.029-0.345z"/>
     <path d="m123.83 728.78c-0.405 0-0.716 0.1-0.93 0.3-0.215 0.2-0.323 0.482-0.323 0.846 0 0.179 0.021 0.349 0.063 0.51l0.958 4.484 1.324 0.179-0.429-2.014c0.167 0.101 0.304 0.169 0.411 0.201 0.108 0.033 0.215 0.05 0.322 0.05 0.704 0 1.056-0.511 1.056-1.531 0-0.411-0.079-0.851-0.237-1.32-0.158-0.468-0.42-0.869-0.787-1.204-0.367-0.334-0.843-0.501-1.428-0.501zm0.501 0.868c0.185 0 0.358 0.115 0.52 0.345 0.161 0.23 0.289 0.516 0.384 0.859 0.096 0.343 0.144 0.673 0.144 0.989 0 0.239-0.042 0.442-0.126 0.609-0.083 0.167-0.2 0.25-0.349 0.25-0.089 0-0.189-0.013-0.3-0.04-0.11-0.027-0.186-0.067-0.228-0.121l-0.492-2.273c-0.018-0.072-0.027-0.14-0.027-0.206 0-0.274 0.158-0.412 0.474-0.412z"/>
     <path d="m127.8 728.78c-0.405 0-0.716 0.1-0.93 0.3-0.215 0.2-0.323 0.482-0.323 0.846 0 0.179 0.021 0.349 0.063 0.51l0.958 4.484 1.324 0.179-0.429-2.014c0.167 0.101 0.304 0.169 0.411 0.201 0.108 0.033 0.215 0.05 0.322 0.05 0.704 0 1.056-0.511 1.056-1.531 0-0.411-0.079-0.851-0.237-1.32-0.158-0.468-0.42-0.869-0.787-1.204-0.367-0.334-0.843-0.501-1.428-0.501zm0.501 0.868c0.185 0 0.358 0.115 0.52 0.345 0.161 0.23 0.289 0.516 0.384 0.859 0.096 0.343 0.144 0.673 0.144 0.989 0 0.239-0.042 0.442-0.126 0.609-0.083 0.167-0.2 0.25-0.349 0.25-0.089 0-0.189-0.013-0.3-0.04-0.11-0.027-0.186-0.067-0.228-0.121l-0.492-2.273c-0.018-0.072-0.027-0.14-0.027-0.206 0-0.274 0.158-0.412 0.474-0.412z"/>
    </g>
-   <text transform="matrix(1 0 0 -1 134.92 729.02)" fill="#000000" font-family="Segoe UI" font-size="9px" kerning="auto" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="0" y="0">ImgBB Uploader Settings</tspan></text>
+   <text transform="matrix(1,0,0,-1,134.92,729.02)" fill="#000000" font-family="Segoe UI" font-size="9px" kerning="auto" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="0" y="0">ImgBB Uploader Settings</tspan></text>
   </g>
   <g fill-rule="nonzero" font-family="'Segoe MDL2 Assets'" stroke="none">
    <path d="m395.22 735.17-3.14-3.139 3.14-3.14-0.611-0.611-3.139 3.14-3.14-3.14-0.611 0.611 3.14 3.14-3.14 3.139 0.611 0.611 3.14-3.14 3.139 3.14z" fill="#000"/>
    <path d="m360.69 735.75v-7.5h-7.5v7.5zm-0.75-0.75h-5.999v-5.999h5.999z" fill="#ccc"/>
    <path d="m326.96 732.4v-0.751h-7.501v0.751z" fill="#000"/>
   </g>
-  <g font-family="Segoe UI" font-size="9px" letter-spacing="-.01em">
-   <rect x="259.85" y="536.61" width="120.74" height="16.509" fill="#e1e1e1" stroke="#aeaeae" stroke-linejoin="miter" stroke-width=".75"/>
-   <text transform="matrix(1 0 0 -1 262.42 541.54)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="0" y="0">delete after 3 months</tspan></text>
-   <path d="m374.27 542.68-2.927 2.926 0.355 0.355 2.572-2.572 2.572 2.572 0.355-0.355z" fill="#000" fill-rule="nonzero" stroke-width=".15"/>
-   <rect x="259.85" y="469.11" width="120.74" height="16.509" fill="#e1e1e1" stroke="#aeaeae" stroke-linejoin="miter" stroke-width=".75"/>
-   <text transform="matrix(1 0 0 -1 262.39 474.09)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="0" y="0">Viewer Link</tspan></text>
-   <path d="m374.27 475.18-2.927 2.926 0.355 0.355 2.572-2.572 2.572 2.572 0.355-0.355z" fill="#000" fill-rule="nonzero" stroke-width=".15"/>
+  <g font-family="Segoe UI" font-size="9px">
+   <g letter-spacing="-.01em">
+    <rect x="259.85" y="536.61" width="120.74" height="16.509" fill="#e1e1e1" stroke="#aeaeae" stroke-linejoin="miter" stroke-width=".75"/>
+    <text transform="matrix(1,0,0,-1,262.42,541.54)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="0" y="0">delete after 3 months</tspan></text>
+    <path d="m374.27 542.68-2.927 2.926 0.355 0.355 2.572-2.572 2.572 2.572 0.355-0.355z" fill="#000" fill-rule="nonzero" stroke-width=".15"/>
+    <rect x="259.85" y="469.11" width="120.74" height="16.509" fill="#e1e1e1" stroke="#aeaeae" stroke-linejoin="miter" stroke-width=".75"/>
+    <text transform="matrix(1,0,0,-1,262.39,474.09)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="0" y="0">Viewer Link</tspan></text>
+    <path d="m374.27 475.18-2.927 2.926 0.355 0.355 2.572-2.572 2.572 2.572 0.355-0.355z" fill="#000" fill-rule="nonzero" stroke-width=".15"/>
+   </g>
+   <g letter-spacing=".01em">
+    <rect x="144.38" y="421.87" width="235.93" height="16.509" fill="#e1e1e1" stroke="#aeaeae" stroke-linejoin="miter" stroke-width=".75"/>
+    <text transform="matrix(1,0,0,-1,146.89,426.84)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="0" y="0">BBCode medium linked</tspan></text>
+    <path d="m374.27 427.93-2.927 2.926 0.355 0.355 2.572-2.572 2.572 2.572 0.355-0.355z" fill="#000" fill-rule="nonzero" stroke-width=".15"/>
+   </g>
+   <text transform="matrix(1,0,0,-1,155.94,447)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="0" y="0">Put to clipboard:</tspan></text>
   </g>
-  <g font-family="Segoe UI" font-size="9px" letter-spacing=".01em">
-   <rect x="144.38" y="421.87" width="235.93" height="16.509" fill="#e1e1e1" stroke="#aeaeae" stroke-linejoin="miter" stroke-width=".75"/>
-   <text transform="matrix(1 0 0 -1 146.89 426.84)" fill="#000000" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="0" y="0">BBCode medium linked</tspan></text>
-   <path d="m374.27 427.93-2.927 2.926 0.355 0.355 2.572-2.572 2.572 2.572 0.355-0.355z" fill="#000" fill-rule="nonzero" stroke-width=".15"/>
-  </g>
-  <text transform="matrix(1 0 0 -1 155.94 447)" fill="#000000" font-family="Segoe UI" font-size="9px" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="0" y="0">Put to clipboard:</tspan></text>
   <g stroke="#000" stroke-linejoin="miter" stroke-width=".75">
    <rect x="144.38" y="445.88" width="9.026" height="8.991" fill="#fff" stroke-linecap="round"/>
    <path d="m145.87 449.81 1.847-1.855 4.238 4.255" fill="none"/>
   </g>
   <g font-family="Segoe UI" font-size="9px" stroke-linecap="round">
-   <text transform="matrix(1 0 0 -1 156.23 401.25)" fill="#000000" kerning="auto" stroke="none" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="0" y="0">Show notification</tspan></text>
+   <text transform="matrix(1,0,0,-1,156.23,401.25)" fill="#000000" kerning="auto" stroke="none" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="0" y="0">Show notification</tspan></text>
    <rect x="144.34" y="400.13" width="9.026" height="8.991" fill="#fff" stroke="#000" stroke-linejoin="miter" stroke-width=".75"/>
   </g>
-  <text transform="matrix(1 0 0 -1 156.35 472.5)" fill="#000000" font-family="Segoe UI" font-size="9px" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="0" y="0">Open:</tspan></text>
+  <text transform="matrix(1,0,0,-1,156.35,472.5)" fill="#000000" font-family="Segoe UI" font-size="9px" kerning="auto" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width=".375" xml:space="preserve"><tspan x="0" y="0">Open:</tspan></text>
   <g stroke="#000" stroke-linejoin="miter" stroke-width=".75">
    <rect x="144.34" y="471.37" width="9.026" height="8.991" fill="#fff" stroke-linecap="round"/>
    <path d="m145.84 475.31 1.847-1.855 4.238 4.255" fill="none"/>
