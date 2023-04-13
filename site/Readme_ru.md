@@ -1,4 +1,4 @@
-<p align="right"><a href="../readme.md">EN</a></p> 
+<p align="right"><a href="https://github.com/nbb1967/imgbb-uploader">EN</a></p> 
 
 
 ![ImgBB Uploader](images/header.svg)

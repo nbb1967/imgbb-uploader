@@ -1,4 +1,4 @@
-<p align="right"><a href="site/readme_ru.md">RU</a></p>
+<p align="right"><a href="https://github.com/nbb1967/imgbb-uploader/blob/main/site/Readme_ru.md">RU</a></p>
 
 ![ImgBB Uploader](site/images/header.svg)
 -----------------
