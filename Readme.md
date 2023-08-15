@@ -2,7 +2,7 @@
 
 ![ImgBB Uploader](site/images/header.svg)
 -----------------
-Utility for uploading images to [ImgBB](https://ibb.com) photohosting.
+Utility for uploading images to [ImgBB](https://imgbb.com/) photohosting.
 <br>
 <br>
 <br>
