@@ -3,7 +3,7 @@
 
 ![ImgBB Uploader](images/header.svg)
 -----------------
-Утилита для загрузки изображений на фотохостинг [ImgBB](https://ibb.com).
+Утилита для загрузки изображений на фотохостинг [ImgBB](https://imgbb.com/).
 <br>
 <br>
 <br>
